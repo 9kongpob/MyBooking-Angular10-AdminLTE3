@@ -8,12 +8,14 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { BookingRoomComponent } from './booking-room/booking-room.component';
 
 const appRoutes: Routes = [
   {
     path: 'dashboard', component: HeaderComponent,
     children: [
       { path: 'home', component: HomeComponent },
+      { path: 'booking', component: BookingRoomComponent },
       { path: 'about', component: AboutComponent },
     ]
   },
@@ -27,7 +29,8 @@ const appRoutes: Routes = [
     LoginComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    BookingRoomComponent
   ],
   imports: [
     BrowserModule,
