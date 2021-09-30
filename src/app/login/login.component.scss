@@ -1,0 +1,13 @@
+//===============//Border Setting//===============//
+$border_Active: solid 1px;
+$border_Inactive: none;
+$borderSetting: $border_Active;
+//===============================================//
+
+.login-page {
+    background-image: url("../../assets/img/login_wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+
+}
